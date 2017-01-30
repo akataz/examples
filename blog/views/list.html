@@ -3,15 +3,10 @@
 {% block title %}Posts{% endblock %}
 
 {% block content %}
-  <h1>Posts</h1>
-  <p>You have <strong>{{ posts.length }}</strong> posts!</p>
+  <h1>Here is some data</h1>
   <p><a href="/post/new">Create a Post</a></p>
-  <ul id="posts">
+  <button formmethod="GET" formname="name">Get Data</button>
     {% for post in posts %}
-      <li>
-        <h2>{{ post.title }}</h2>
-        <p><a href="/post/{{ post.id }}">Read post</a></p>
-      </li>
     {% endfor %}
   </ul>
 {% endblock %}

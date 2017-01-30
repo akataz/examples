@@ -13,6 +13,8 @@ var app = module.exports = koa();
 // "database"
 
 var posts = [];
+var string = JSON.stringify("Icanhazstring");
+
 
 // middleware
 
@@ -67,5 +69,4 @@ function *create() {
 
 // listen
 
-if (!module.parent) app.listen(3000);
-
+if (!module.parent) app.listen(3002);
